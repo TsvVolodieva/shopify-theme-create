@@ -1,0 +1,18 @@
+<div>
+    {% for product in collections.all.products %}
+<h1>{{ product.title }}</h1>
+{% form 'product', product %}
+<p>{{ product | json }}</p>
+ <div>
+   <label for="size">Size</label>
+   <select name="id" id="product-form-size">
+    {% for variant in product.variants %}
+      <option value="{{ variant.id }}">{{ variant.title }}</option>
+    {% endfor %}
+   </select>
+ </div>
+
+ <button type="submit">Add To Cart</button>
+{% endform %}
+{% endfor %}
+</div> 

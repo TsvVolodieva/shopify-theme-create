@@ -1,0 +1,19 @@
+<div>
+    <h2>{{ line_item.product.title}}</h2>
+    {% for option in line_item.options_with_values %}
+    <div>
+        <span>{{ option.name}}</span>
+        <span>{{ option.value}}</span>
+    </div>
+    {% endfor %}
+    <div>
+        {{ line_item.price | money }}
+    </div>
+    <div>
+        <span>Quantity:</span>
+        <input type="text" name="updates[]" size="4" id="updates_{{ line_item.id }}" value="{{ line_item.quantity}}">
+    </div>
+    <div>
+        <a href="/cart/change?line={{ index }}&quantity=0">Remove</a>
+    </div>
+</div>
