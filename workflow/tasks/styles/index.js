@@ -10,7 +10,7 @@ const prefixerOptions = {
 
 sass.compiler = require('node-sass');
 
-const styles = () => src('src/styles/theme.scss')
+const styles = () => src('src/styles/theme.css')
   .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
   .pipe(autoprefixer(prefixerOptions))

@@ -1,0 +1,15 @@
+
+{
+    "name": "Cart",
+    "sections": {
+      "main": {
+        "type": "cart"
+      }
+    },
+    "recommendations": {
+        "type": "example"
+      },
+    "order": [
+      "main"
+    ]
+  }

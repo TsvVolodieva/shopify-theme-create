@@ -142,3 +142,4 @@ The workflow can be customized by editing build.config.js.
 ### babel
 
 {Boolean} - Default: true - Determins if workflow should transpile code with Babel.
+ 

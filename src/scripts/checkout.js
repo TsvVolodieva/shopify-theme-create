@@ -1,3 +1,3 @@
-import example from './components/example';
+// import example from './components/example';
 
-example();
+// example();
